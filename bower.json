@@ -1,0 +1,10 @@
+{
+  "name": "Serasa",
+  "version": "1.0.0",
+  "author":"Keven jesus",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.3",
+    "fontawesome": "~4.3.0"
+  }
+}
