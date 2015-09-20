@@ -1,0 +1,48 @@
+.box-sale{
+	padding:1em;
+	overflow: auto;
+	border-bottom:10px solid darken($brand-warning,45%);
+	background-color: $brand-warning;
+	.container{
+		padding:0;
+	}
+	header{
+		@media(min-width: $screen-md){
+			padding:1.2em;
+			text-align: left;
+		}
+		padding:0;
+		text-align: center;	
+		@include make-md-column(9);
+	}
+	.sale-headline{
+		@media(max-width: $screen-sm){
+			font-size:1.8em;
+		}
+		font-size: 2em;
+		color:darken($brand-warning,45%);
+	}
+	.sale-cta{
+		margin-top: 2.5em;
+		@include make-md-column(3);
+	}
+	.sale-footer{
+		margin-top: 0.5em;
+		@media(max-width: $screen-sm){
+			margin-top:2.5em;
+			margin-bottom: 1em;
+		}
+		@include make-md-column(12);
+		> span{
+			font-size:1.125em;
+			color:darken($brand-warning, 45%);
+		}	
+	}
+	.btn-lg{
+		font-size: 1.8em;
+		font-weight: bold;
+		padding-top:20px;
+		padding-bottom:20px;
+		color:darken($brand-warning,40%);
+	}
+}

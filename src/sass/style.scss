@@ -1,0 +1,19 @@
+/* Bootstrap components */
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+@import "bootstrap/normalize";
+@import "bootstrap/type";
+@import "bootstrap/scaffolding";
+@import "bootstrap/buttons";
+
+/* Extra components */
+@import "font-awesome";
+@import "settings";
+
+/* Features website */
+@import "header";
+@import "hook";
+@import "main";
+@import "sale";
+@import "features";
+@import "footer";

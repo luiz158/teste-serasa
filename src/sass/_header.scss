@@ -1,0 +1,30 @@
+.box-heading{
+	position: relative;
+	display: block;
+	width:100%;
+	height:100px;
+	padding:2em 0;
+	background-color:#fff;
+	@include clearfix();
+	@include box-shadow(3px 6px 10px -2px rgba(0,0,0,0.2));
+	@media(max-width: $screen-sm){
+		height:125px;
+		@include box-shadow(3px 6px 10px -2px rgba(0,0,0,0.1));
+		.heading-logo,
+		.heading-brand{
+			width:100%;
+			margin-top:0.2em;
+			float:none;
+			> img{
+				@include center-block();
+				@include img-responsive();
+			}
+		}
+	}
+	.heading-logo{
+		float:left;
+	}
+	.heading-brand{
+		float:right;
+	}
+}

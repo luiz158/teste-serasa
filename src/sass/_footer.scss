@@ -1,0 +1,41 @@
+.box-footer{
+	@include make-md-column(12);
+	background-color:#656565;
+	color:#ccc;
+	.footer-copy{
+		padding-top:1em;
+		@include make-md-column(9);
+		p{
+			margin:0;
+		}
+	}
+	.footer-social{
+		@include make-md-column(3);
+		@media(max-width: $screen-sm){
+			padding:1em 0;
+			text-align: center;
+		}
+		.social-inline{
+			list-style:none;
+			padding:0;
+			margin-top:1em;
+			> li{
+				display: inline-block;
+				margin-left:0.5em;
+			}
+			> li > a{
+				width:50px;
+				display: inline-block;
+				font-size:1.5em;
+				text-align: center;
+				border-radius:50%;
+				padding:0.6em;
+				color:#fff;
+				background-color:#818181;
+				&:hover{
+					background-color:$brand-primary;
+				}
+			}
+		}
+	}
+}

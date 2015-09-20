@@ -1,0 +1,43 @@
+.box-features{
+		@include make-md-column(12);
+		overflow: auto;
+		padding:1.5em;
+	header{
+		margin:2em 0;
+	}
+	.feature-headline{
+		font-size: 2em;
+		color:#aaa;
+		> strong{
+			color:$brand-success;
+		}
+	}
+	.feature-item{
+		@include make-md-column(2.4);
+		> img{
+			@include center-block();
+		}
+		.feature-item-text{
+			font-size: 1em;
+			text-align: center;
+			padding:1em;
+		}
+	}
+	.feature-cta{
+		margin:3em 0;
+		@include make-md-column(4);
+		@include make-md-column-offset(4);
+		.btn-lg{
+			font-size: 1.7em;
+			font-weight: bold;
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+	}
+	.feature-footer{
+		@include make-md-column(12);
+		> span{
+			color:$brand-primary;
+		}
+	}
+}
